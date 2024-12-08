@@ -9,7 +9,8 @@ Drag and Drop Interface: Move your pieces smoothly using drag and drop.
 Piece Animations: Visual representation of pieces with animated moves.
 Responsive Design: Optimized for both desktop and mobile.
 Chess History: Move history to track all your moves during the game.
-⚙️ Tech Stack
+
+**⚙️ Tech Stack**  
 
 ChessWise is built with the following technologies:
 
