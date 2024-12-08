@@ -14,14 +14,15 @@ Chess History: Move history to track all your moves during the game.
 ChessWise is built with the following technologies:
 
 Frontend
-HTML5: For structuring the web pages.
-CSS3: For styling the board and the game interface.
-JavaScript: For handling the game logic and piece movement.
-Chess.js: A library to manage chess rules, moves, and game state.
-Socket.io: Real-time communication for multiplayer functionality.
-Backend
-Node.js: For running the server-side code and handling WebSocket connections.
-Express: A minimal framework for building the backend API.
+HTML5: For structuring the web pages.   
+CSS3: For styling the board and the game interface.    
+JavaScript: For handling the game logic and piece movement.    
+Chess.js: A library to manage chess rules, moves, and game state.    
+Socket.io: Real-time communication for multiplayer functionality.   
+
+**Backend**
+Node.js: For running the server-side code and handling WebSocket connections.  
+Express: A minimal framework for building the backend API.  
 
 
 💬 Connect with Me
