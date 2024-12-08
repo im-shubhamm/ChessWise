@@ -13,7 +13,7 @@ Chess History: Move history to track all your moves during the game.
 
 ChessWise is built with the following technologies:
 
-Frontend
+**Frontend**  
 HTML5: For structuring the web pages.   
 CSS3: For styling the board and the game interface.    
 JavaScript: For handling the game logic and piece movement.    
