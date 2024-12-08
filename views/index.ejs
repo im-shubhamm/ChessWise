@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessWise</title>
+
+    <style>
+        /* Set the background color of the entire page to a dark gray color */
+        body {
+            background-color: #121212; /* Dark background for the page */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Chessboard styling */
+        .chessboard {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            width: 400px;
+            height: 400px;
+            background-color: #121212; /* Dark background color around the chessboard */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Subtle glow around the board */
+        }
+
+        /* Individual squares on the chessboard */
+        .square {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Light squares */
+        .square.light {
+            background-color: #f0d9b5;
+        }
+
+        /* Dark squares */
+        .square.dark {
+            background-color: #b58863;
+        }
+
+        /* Chess piece styling */
+        .piece {
+            font-size: 36px;
+            cursor: pointer;
+        }
+
+        .piece.white {
+            color: white;
+            filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
+        }
+
+        .piece.black {
+            color: black;
+        }
+
+        /* Draggable pieces */
+        .piece.draggable {
+            cursor: grab;
+        }
+
+        /* Transparent effect when dragging */
+        .dragging {
+            opacity: 0.5;
+        }
+
+        /* Flip chess pieces for black player */
+        .flipped {
+            transform: rotate(180deg);
+        }
+
+        /* Rotate pieces for black player */
+        .flipped .piece {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="chessboard">
+        <!-- Dynamically generated chessboard will be here -->
+    </div>
+
+    <!-- Socket.IO CDN for real-time communication -->
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" 
+            integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" 
+            crossorigin="anonymous"></script>
+    
+    <!-- Chess.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js" 
+            integrity="sha512-xRllwz2gdZciIB+AkEbeq+gVhX8VB8XsfqeFbUh+SzHlN96dEduwtTuVuc2u9EROlmW9+yhRlxjif66ORpsgVA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Your custom JavaScript file to handle the chess game logic -->
+    <script src="/js/chessgame.js"></script>    
+</body>
+</html>
