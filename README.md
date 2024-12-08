@@ -20,7 +20,7 @@ JavaScript: For handling the game logic and piece movement.
 Chess.js: A library to manage chess rules, moves, and game state.    
 Socket.io: Real-time communication for multiplayer functionality.   
 
-**Backend**
+**Backend**  
 Node.js: For running the server-side code and handling WebSocket connections.  
 Express: A minimal framework for building the backend API.  
 
