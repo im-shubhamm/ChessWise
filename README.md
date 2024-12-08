@@ -24,7 +24,8 @@ Node.js: For running the server-side code and handling WebSocket connections.
 Express: A minimal framework for building the backend API.
 
 
-💬 Connect with Us
+💬 Connect with Me
+
 
 GitHub: https://github.com/im-shubhamm        
 LinkedIn: https://www.linkedin.com/in/shubh4mm/
